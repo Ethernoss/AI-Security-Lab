@@ -1,5 +1,7 @@
 # AI Security Lab
 
+**Español** | [English](README.en.md)
+
 Laboratorio personal de ingeniería de seguridad de **Jorge · Ethernoss**, construido para aprender mediante implementación, pruebas controladas, remediación y revisión de evidencia.
 
 La pregunta que guio el proyecto fue: **¿cómo construir una base de infraestructura y controles de seguridad, comprobar su comportamiento y aplicar ese aprendizaje a agentes de IA que consultan hallazgos o solicitan herramientas?**
