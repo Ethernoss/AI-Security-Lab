@@ -1,0 +1,28 @@
+# Local dependencies and runtime
+.DS_Store
+node_modules/
+__pycache__/
+.venv/
+*.log
+tmp/
+cache/
+ai-security/storage/
+vulnerability-management/defectdojo/
+archify/
+
+# Credentials and infrastructure state
+.env
+.env.*
+secrets/
+credentials/
+*.pem
+*.key
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfplan
+crash.log
+
+# Historical saved binary plan (contains Terraform state)
+terraform/docker-lab/out-plan.txt

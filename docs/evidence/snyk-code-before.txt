@@ -1,0 +1,12 @@
+
+ ERROR   Project not supported (SNYK-CODE-0006)
+         Snyk was unable to find supported files.                                       
+                                                                                        
+           Snyk was unable to find supported files.                                     
+
+Path:    /Volumes/Ethernoss/AI-Security-Lab/docs 
+Status:  422 Unprocessable Entity 
+Docs:    https://docs.snyk.io/scan-with-snyk/error-catalog#snyk-code-0006 
+Tip:     Try snyk doctor: `snyk <command> -d 2>&1 | snyk doctor --stdin` 
+                                                                         
+ID:      urn:snyk:interaction:53b096fb-fb91-479c-9665-1fad595c5b9c 

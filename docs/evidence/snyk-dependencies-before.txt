@@ -1,0 +1,10 @@
+
+ FATAL   No supported files found (SNYK-CLI-0008)
+                                                                                                                                                      
+           Could not detect supported target files in /Volumes/Ethernoss/AI-Security-Lab/docs.                                                        
+           Please see our documentation for supported languages and target files: https://snyk.co/udVgQ and make sure you are in the right directory. 
+
+Docs:    https://docs.snyk.io/scan-with-snyk/error-catalog#snyk-cli-0008 
+Tip:     Try snyk doctor: `snyk <command> -d 2>&1 | snyk doctor --stdin` 
+                                                                         
+ID:      urn:snyk:interaction:1fb7e9db-d451-4dce-98fa-352da368b6dd 

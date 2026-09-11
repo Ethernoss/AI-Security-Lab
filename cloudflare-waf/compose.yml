@@ -1,0 +1,34 @@
+services:
+
+  origin:
+    image: nginx:alpine
+    container_name: cloudflare-origin
+    volumes:
+      - ./app:/usr/share/nginx/html:ro
+    networks:
+      - waf-net
+
+  waf:
+    image: owasp/modsecurity-crs:4.25.1-nginx-alpine-lts
+    container_name: cloudflare-waf
+    depends_on:
+      - origin
+    ports:
+      - "127.0.0.1:8088:8080"
+    environment:
+      BACKEND: "http://origin:80"
+
+      MODSEC_RULE_ENGINE: "On"
+
+      BLOCKING_PARANOIA: "1"
+      DETECTION_PARANOIA: "1"
+
+      ANOMALY_INBOUND: "5"
+      ANOMALY_OUTBOUND: "4"
+
+    networks:
+      - waf-net
+
+networks:
+  waf-net:
+    driver: bridge

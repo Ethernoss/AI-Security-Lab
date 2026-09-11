@@ -1,0 +1,18 @@
+
+Testing /Volumes/Ethernoss/AI-Security-Lab/appsec/sast/vulnerable-app...
+
+Organization:      ethernoss
+Package manager:   npm
+Target file:       package-lock.json
+Project name:      vulnerable-app
+Open source:       no
+Project path:      /Volumes/Ethernoss/AI-Security-Lab/appsec/sast/vulnerable-app
+Licenses:          enabled
+
+✔ Tested 68 dependencies for known issues, no vulnerable paths found.
+
+Next steps:
+- Run `snyk monitor` to be notified about new related vulnerabilities.
+- Run `snyk test` as part of your CI/test.
+
+

@@ -1,0 +1,8 @@
+docker_image.nginx: Refreshing state... [id=sha256:72ba65eb42c10344912a84ff42408db7d34f2feb642204570ab8fc5ffd29f1d3nginx:alpine]
+docker_network.security_lab: Refreshing state... [id=f0d4c5204d16413e948efb78ee065bf4e228ecdf41a4ec95275bf8093fb58924]
+docker_container.web: Refreshing state... [id=a24360c6c89be800ee5077505726b97a6f2068eac5a7c2b8c038579f7704960a]
+
+No changes. Your infrastructure matches the configuration.
+
+Terraform has compared your real infrastructure against your configuration
+and found no differences, so no changes are needed.

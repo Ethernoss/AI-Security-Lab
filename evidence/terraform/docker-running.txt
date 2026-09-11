@@ -1,0 +1,2 @@
+CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                  NAMES
+a24360c6c89b   72ba65eb42c1   "/docker-entrypoint.…"   13 minutes ago   Up 13 minutes   0.0.0.0:8081->80/tcp   security-lab-web

@@ -1,0 +1,49 @@
+
+Testing /Volumes/Ethernoss/AI-Security-Lab/appsec/sast/vulnerable-app ...
+
+Open Issues
+
+ ✗ [LOW] Use of Password Hash With Insufficient Computational Effort
+   Path: node_modules/etag/index.js, line 46
+   Info: crypto.createHash hash (used in crypto.createHash) is insecure. Consider changing it to a secure hashing algorithm.
+
+ ✗ [MEDIUM] Cleartext Transmission - HTTP Instead of HTTPS
+   Path: node_modules/express/lib/application.js, line 599
+   Info: node:http.createServer uses HTTP which is an insecure protocol and should not be used in code due to cleartext transmission of information. Data in cleartext in a communication channel can be sniffed by unauthorized actors. Consider using the https module instead.
+
+ ✗ [MEDIUM] Allocation of Resources Without Limits or Throttling
+   Path: app.js, line 10
+   Info: Expensive operation (a system command execution) is performed by an endpoint handler which does not use a rate-limiting mechanism. It may enable the attackers to perform Denial-of-service attacks. Consider using a rate-limiting middleware such as express-limit.
+
+ ✗ [HIGH] Command Injection
+   Path: app.js, line 13
+   Info: Unsanitized input from an HTTP parameter flows into child_process.exec, where it is used to build a shell command. This may result in a Command Injection vulnerability.
+
+ ✗ [HIGH] Regular Expression Denial of Service (ReDoS)
+   Path: node_modules/router/index.js, line 519
+   Info: Unsanitized user input from the request URL flows into match, where it is used to build a regular expression. This may result in a Regular expression Denial of Service attack (reDOS).
+
+
+
+╭───────────────────────────────────────────────────────────────────────────────────────╮
+│ Test Summary                                                                          │
+│                                                                                       │
+│   Organization:      ethernoss                                                        │
+│   Test type:         Static code analysis                                             │
+│   Project path:      /Volumes/Ethernoss/AI-Security-Lab/appsec/sast/vulnerable-app    │
+│                                                                                       │
+│   Total issues:   5                                                                   │
+│   Ignored issues: 0 [ 0 HIGH  0 MEDIUM  0 LOW ]                                       │
+│   Open issues:    5 [ 2 HIGH  2 MEDIUM  1 LOW ]                                       │
+╰───────────────────────────────────────────────────────────────────────────────────────╯
+    
+💡 Tip
+
+   To view ignored issues, use the --include-ignores option.
+                                                            
+
+
+💡 Tip
+
+   Some capabilities, including the ability to apply ignores, are unavailable. Retest the project with the --remote-repo-url parameter or from within a repository to enable full functionality.
+                                                                                                                                                                                                
